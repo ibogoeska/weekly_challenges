@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts Overview</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Latest Font-Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google font Poppins -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <img src="./images/main.png" alt="Magazines on a table" />
+      <div class="hf-center header-bgcolor">
+        <h1 class="header-title">
+          InsightsHub: Explore, Learn, and Stay Inspired
+        </h1>
+        <form action="#" class="header-form">
+          <input
+            type="text"
+            name="search-text"
+            id="search-text"
+            placeholder="..."
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <!--main -->
+    <main>
+      <div class="main-container">
+        <!-- featured posts -->
+        <div class="featured-posts wrapper-80">
+          <section class="post-details">
+            <h2>Featured posts</h2>
+            <h3>
+              <a href="./post-detail.html" target="_blank"
+                >The Art of Blogging</a
+              >
+            </h3>
+            <p class="posts-date">
+              March 5, 2024 by John Doe - <i class="fa-solid fa-clock"></i> 8
+              min read
+            </p>
+            <p>
+              Unlock the secrets of creating engaging and successful blog
+              content. From choosing the right topics to mastering SEO, this
+              comprehensive guide will help you become a blogging master.
+              Explore the artistry of storytelling and discover tips for
+              building a loyal readership.
+            </p>
+            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+            <button><i class="fa-solid fa-comment"></i> Comment</button>
+          </section>
+
+          <section class="post-details">
+            <h3><a href="#">Exploring Virtual Reality</a></h3>
+            <p class="posts-date">
+              February 22, 2024 by Jane Smith -
+              <i class="fa-solid fa-clock"></i> 8 min read
+            </p>
+            <p>
+              Dive into the immersive world of virtual reality and discover its
+              endless possibilities. From gaming to education, this post
+              explores the various applications of VR technology. Learn about
+              the latest advancements, must-try experiences, and how virtual
+              reality is reshaping industries and entertainment.
+            </p>
+            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+            <button><i class="fa-solid fa-comment"></i> Comment</button>
+          </section>
+        </div>
+
+        <!-- recent posts -->
+        <div class="recent-posts wrapper-80">
+          <section class="post-details">
+            <h2>Recent Posts</h2>
+            <h3><a href="#">The Future od AI in Healthcare</a></h3>
+            <p class="posts-date">
+              March 10, 2024 by Alex Johnson -
+              <i class="fa-solid fa-clock"></i> 12 min read
+            </p>
+            <p>
+              Explore the groundbreaking advancements and transformaive
+              potential of artificial intelligence in the healthcare industry.
+              This comprehensive post dives into the current applications of AI
+              in diagnostics, personalized medicine, and patient care.
+            </p>
+            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+            <button><i class="fa-solid fa-comment"></i> Comment</button>
+          </section>
+
+          <section class="post-details">
+            <h3><a href="#">The Rise of 5G Technology</a></h3>
+            <p class="posts-date">
+              February 28, 2024 by Chris Williams -
+              <i class="fa-solid fa-clock"></i> 9 min read
+            </p>
+            <p>
+              Embark on a journey through the evolution of mobile communication
+              with the advent of 5G technology. This in-depth exploration delves
+              into the capabilities and impact of 5G on various industries.
+              Discover how faster speeds, lower latency, and increased
+              connectivity are transforming the way we live, work, and innovate.
+              From smart cities to IoT applications, explore the limitless
+              possibilities that 5G brings to the forefront of the digital era.
+            </p>
+            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+            <button><i class="fa-solid fa-comment"></i> Comment</button>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-bgcolor hf-center">
+        <div class="footer-fa-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <p class="footer-copytext">
+          &copy; 2024 Blog Title. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

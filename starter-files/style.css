@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+.header-bgcolor {
+  background-color: #333;
+}
+.hf-center {
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+.header-title {
+  color: #fff;
+}
+.header-form {
+  width: 300px;
+  margin: 0 auto;
+}
+input[type="text"],
+button[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+.header-form input {
+  background-color: #fff;
+  margin-bottom: 3px;
+}
+.header-form button {
+  background-color: #ccc;
+  color: #fff;
+}
+.header-form button:hover {
+  background-color: #4b4b4b;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* main section  */
+.main-container {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.featured-posts,
+.recent-posts {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+}
+
+.main-container div:last-child {
+  margin-bottom: 0;
+}
+
+.post-details {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.post-details h3 a {
+  color: #caca0b;
+}
+
+.posts-date {
+  font-size: 0.8rem;
+  color: #828282;
+}
+
+.post-details button {
+  background-color: #333;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.post-details button:hover {
+  background-color: #4b4b4b;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* to remove the bottom border of the second, fourth... section */
+section:nth-of-type(2n + 0) {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Footer */
+.footer-bgcolor {
+  background-color: #333;
+}
+.footer-fa-icons {
+  margin-bottom: 15px;
+}
+.footer-fa-icons a {
+  color: #caca0b;
+  padding: 5px;
+}
+.footer-copytext {
+  color: #fff;
+}
+
+/* detail-page css */
+.main-title {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+}
+
+.fa-buttons {
+  text-align: center;
+  padding: 20px 0;
+  margin: 15px auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.fa-buttons button {
+  border: none;
+  background-color: #fff;
+  font-size: large;
+  margin-right: 5px;
+}
+.fa-buttons button:hover {
+  color: #caca0b;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}

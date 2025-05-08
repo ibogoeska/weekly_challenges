@@ -1,159 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posts Overview</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- Latest Font-Awesome CDN -->
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Google font Poppins -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
     />
   </head>
-
   <body>
-    <!-- header -->
-    <header>
-      <img src="./images/main.png" alt="Magazines on a table" />
-      <div class="hf-center header-bgcolor">
-        <h1 class="header-title">
-          InsightsHub: Explore, Learn, and Stay Inspired
+    <div class="wrapper w-5/6 m-auto bg-white">
+      <!-- HEADER -->
+      <header class="mb-5">
+        <div
+          class="navbar flex justify-around items-center py-6 border-b border-b-gray-300"
+        >
+          <div class="logo w-[60px]">
+            <a href="#home"><img src="./img/logo.png" alt="Logo" /></a>
+          </div>
+          <div class="navbar-links uppercase font-extrabold space-x-4">
+            <a
+              href="#home"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Bikes</a
+            >
+            <a
+              href="#"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Gear</a
+            >
+            <a
+              href="#"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Parts</a
+            >
+            <a
+              href="#"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Tires</a
+            >
+            <a
+              href="#"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Service-info</a
+            >
+            <a
+              href="#"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Catalogues</a
+            >
+            <a
+              href="#"
+              class="hover:text-orange-400 hover:bg-[#e7e7e7] p-3 no-underline cursor-pointer"
+              >Contact</a
+            >
+          </div>
+          <div class="navbar-serchbar space-x-2">
+            <a href="#"
+              ><i class="fa-solid fa-magnifying-glass hover:text-orange-400"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-solid fa-bag-shopping hover:text-orange-400"></i
+            ></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- ----------- MAIN section ------------ -->
+      <main class="mb-5 px-3">
+        <h1 class="text-4xl font-semibold border-b border-b-gray-300 py-3">
+          Bikes
         </h1>
-        <form action="#" class="header-form">
-          <input
-            type="text"
-            name="search-text"
-            id="search-text"
-            placeholder="..."
-          />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-    </header>
-
-    <!--main -->
-    <main>
-      <div class="main-container">
-        <!-- featured posts -->
-        <div class="featured-posts wrapper-80">
-          <section class="post-details">
-            <h2>Featured posts</h2>
-            <h3>
-              <a href="./post-detail.html" target="_blank"
-                >The Art of Blogging</a
+        <div class="flex justify-between py-5 gap-3">
+          <div class="main-sidebar w-1/4">
+            <div class="main-sidebar_filter py-3 border-b border-b-gray-300">
+              <h3 class="font-bold text-lg pb-3">Filter by:</h3>
+              <div
+                class="showAllDiv w-full flex justify-between my-2 hover:cursor-pointer"
               >
-            </h3>
-            <p class="posts-date">
-              March 5, 2024 by John Doe - <i class="fa-solid fa-clock"></i> 8
-              min read
-            </p>
-            <p>
-              Unlock the secrets of creating engaging and successful blog
-              content. From choosing the right topics to mastering SEO, this
-              comprehensive guide will help you become a blogging master.
-              Explore the artistry of storytelling and discover tips for
-              building a loyal readership.
-            </p>
-            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
-            <button><i class="fa-solid fa-comment"></i> Comment</button>
-          </section>
-
-          <section class="post-details">
-            <h3><a href="#">Exploring Virtual Reality</a></h3>
-            <p class="posts-date">
-              February 22, 2024 by Jane Smith -
-              <i class="fa-solid fa-clock"></i> 8 min read
-            </p>
-            <p>
-              Dive into the immersive world of virtual reality and discover its
-              endless possibilities. From gaming to education, this post
-              explores the various applications of VR technology. Learn about
-              the latest advancements, must-try experiences, and how virtual
-              reality is reshaping industries and entertainment.
-            </p>
-            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
-            <button><i class="fa-solid fa-comment"></i> Comment</button>
-          </section>
+                <button
+                  class="showAllBtn cursor-pointer text-orange-400 font-bold"
+                >
+                  Show all
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-orange-400 text-[#5c5c5c] rounded-full showAll cursor-pointer"
+                ></span>
+              </div>
+            </div>
+            <div
+              class="main-sidebar_gender flex flex-col items-start py-3 border-b border-b-gray-300"
+            >
+              <h4 class="font-bold py-1">Gender</h4>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="gender"
+                data-value="male"
+              >
+                <button
+                  class="text-xs py-1 group-hover:text-orange-400 cursor-pointer"
+                >
+                  Male
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="group w-full flex justify-between hover:cursor-pointer"
+                data-filter="gender"
+                data-value="female"
+              >
+                <button
+                  class="text-xs py-1 group-hover:text-orange-400 cursor-pointer"
+                >
+                  Female
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                  >12</span
+                >
+              </div>
+            </div>
+            <div class="main-sidebar_brand flex flex-col items-start py-3">
+              <h4 class="font-bold">Brand</h4>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="brand"
+                data-value="le-grand-bikes"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  LE GRAND BIKES
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="brand"
+                data-value="kross"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  KROSS
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="brand"
+                data-value="explorer"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  EXPLORER
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="brand"
+                data-value="visitor"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  VISITOR
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="brand"
+                data-value="pony"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  PONY
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="brand"
+                data-value="force"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  FORCE
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="w-full flex justify-between my-2 group hover:cursor-pointer"
+                data-filter="brand"
+                data-value="e-bikes"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  E-BIKES
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+              <div
+                class="group w-full flex justify-between my-2 hover:cursor-pointer"
+                data-filter="brand"
+                data-value="ideal"
+              >
+                <button
+                  class="text-xs group-hover:text-orange-400 cursor-pointer"
+                >
+                  IDEAL
+                </button>
+                <span
+                  class="badge text-xs font-bold py-1 px-3 bg-[#d3d3d3] text-[#5c5c5c] rounded-full group-hover:bg-orange-400"
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="main-section ms-3 w-3/4 grid grid-cols-3 gap-5"></div>
         </div>
+      </main>
 
-        <!-- recent posts -->
-        <div class="recent-posts wrapper-80">
-          <section class="post-details">
-            <h2>Recent Posts</h2>
-            <h3><a href="#">The Future od AI in Healthcare</a></h3>
-            <p class="posts-date">
-              March 10, 2024 by Alex Johnson -
-              <i class="fa-solid fa-clock"></i> 12 min read
-            </p>
-            <p>
-              Explore the groundbreaking advancements and transformaive
-              potential of artificial intelligence in the healthcare industry.
-              This comprehensive post dives into the current applications of AI
-              in diagnostics, personalized medicine, and patient care.
-            </p>
-            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
-            <button><i class="fa-solid fa-comment"></i> Comment</button>
-          </section>
-
-          <section class="post-details">
-            <h3><a href="#">The Rise of 5G Technology</a></h3>
-            <p class="posts-date">
-              February 28, 2024 by Chris Williams -
-              <i class="fa-solid fa-clock"></i> 9 min read
-            </p>
-            <p>
-              Embark on a journey through the evolution of mobile communication
-              with the advent of 5G technology. This in-depth exploration delves
-              into the capabilities and impact of 5G on various industries.
-              Discover how faster speeds, lower latency, and increased
-              connectivity are transforming the way we live, work, and innovate.
-              From smart cities to IoT applications, explore the limitless
-              possibilities that 5G brings to the forefront of the digital era.
-            </p>
-            <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
-            <button><i class="fa-solid fa-comment"></i> Comment</button>
-          </section>
+      <!-- ----------- FOOTER section ------------ -->
+      <footer class="px-3 py-6 flex justify-center bg-[#e7e7e771]">
+        <div class="social-share flex flex-col w-1/4">
+          <h4 class="font-bold py-3">Social Share</h4>
+          <div class="flex gap-3">
+            <button
+              class="size-8 bg-orange-400 text-white flex justify-center items-center hover:bg-gray-500 cursor-pointer"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button
+              class="size-8 bg-orange-400 text-white flex justify-center items-center hover:bg-gray-500 cursor-pointer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </button>
+            <button
+              class="size-8 bg-orange-400 text-white flex justify-center items-center hover:bg-gray-500 cursor-pointer"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </button>
+            <button
+              class="size-8 bg-orange-400 text-white flex justify-center items-center hover:bg-gray-500 cursor-pointer"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </button>
+          </div>
         </div>
-      </div>
-    </main>
-
-    <!-- footer -->
-    <footer>
-      <div class="footer-bgcolor hf-center">
-        <div class="footer-fa-icons">
-          <a href="https://www.facebook.com/" target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
-          <a href="https://x.com/" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.linkedin.com/" target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
+        <div
+          class="event-info flex flex-col w-1/4 border-s border-s-gray-300 px-2"
+        >
+          <h4 class="font-bold py-3">Event info</h4>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Enter Now</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Event Info</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Course Maps</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Race Pack</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Results</a>
+          <a href="#" class="text-xs py-1 hovertext-orange-400">FAQs</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400"
+            >Am I Registered?</a
+          >
         </div>
-        <p class="footer-copytext">
-          &copy; 2024 Blog Title. All rights reserved.
-        </p>
-      </div>
-    </footer>
+        <div
+          class="registration flex flex-col w-1/4 border-s border-s-gray-300 px-2"
+        >
+          <h4 class="font-bold py-3">Registration</h4>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Volunteers</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Gallery</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Press</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Results</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400"
+            >Privacy Policy</a
+          >
+          <a href="#" class="text-xs py-1 hover:text-orange-400"
+            >Service Plus</a
+          >
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Contacts</a>
+        </div>
+        <div
+          class="schedule flex flex-col w-1/4 border-s border-s-gray-300 px-2"
+        >
+          <h4 class="font-bold py-3">Schedule</h4>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Gallery</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">About</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Videos</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Results</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">FAQs</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Results</a>
+          <a href="#" class="text-xs py-1 hover:text-orange-400">Volunteers</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -43,7 +43,7 @@ function renderBikesCards(bikesData) {
       "hover:border-orange-400"
     );
 
-    const imgUrl = `/starter-files/img/${bike.image}.png`;
+    const imgUrl = `https://ibogoeska.github.io/weekly_challenges/starter-files/img/${bike.image}.png`;
 
     card.innerHTML = `
       <img src="${imgUrl}" alt="${bike.name}" class="w-full block p-5 h-[200px] hover:scale-110 " />
